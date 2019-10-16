@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            vertical-align: top;
+        }
+        .box {
+            width: 870px;
+            height: 540px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+        .box li {
+            width: 280px;
+            height: 260px;
+            float: left;
+            margin: 5px;
+        }
+       #one {
+           background: url("images/11.jpg");
+       }
+        #two {
+            background: url("images/22.jpg");
+        }
+        #three {
+            background: url("images/33.jpg");
+        }
+        #four {
+            background: url("images/44.jpg");
+        }
+        #five {
+            background: url("images/55.jpg");
+        }
+        #six {
+            background: url("images/66.jpg");
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul id="ul">
+            <li id="one"></li>
+            <li id="two"></li>
+            <li id="three"></li>
+            <li id="four"></li>
+            <li id="five"></li>
+            <li id="six"></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    function $(id){return document.getElementById(id);}
+    $("one").onmouseover = function () {
+        this.style.backgroundImage = "url('images/1.jpg')";
+    }
+    $("one").onmouseout = function () {
+        this.style.backgroundImage = "url('images/11.jpg')";
+    }
+    $("two").onmouseover = function () {
+        this.style.backgroundImage = "url('images/2.jpg')";
+    }
+    $("two").onmouseout = function () {
+        this.style.backgroundImage = "url('images/22.jpg')";
+    }
+    $("three").onmouseover = function () {
+        this.style.backgroundImage = "url('images/3.jpg')";
+    }
+    $("three").onmouseout = function () {
+        this.style.backgroundImage = "url('images/33.jpg')";
+    }
+    $("four").onmouseover = function () {
+        this.style.backgroundImage = "url('images/4.jpg')";
+    }
+    $("four").onmouseout = function () {
+        this.style.backgroundImage = "url('images/44.jpg')";
+    }
+    $("five").onmouseover = function () {
+        this.style.backgroundImage = "url('images/5.jpg')";
+    }
+    $("five").onmouseout = function () {
+        this.style.backgroundImage = "url('images/55.jpg')";
+    }
+    $("six").onmouseover = function () {
+        this.style.backgroundImage = "url('images/6.jpg')";
+    }
+    $("six").onmouseout = function () {
+        this.style.backgroundImage = "url('images/66.jpg')";
+    }
+</script>

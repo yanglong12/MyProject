@@ -1,0 +1,349 @@
+*{
+	font-size: 12px;
+	font-family: 'Microsoft YaHei UI'; 
+}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd{
+	margin: 0;padding: 0;
+}
+ul,li,ol{
+	list-style: none;
+}
+input,textarea,button{
+	border:0;
+}
+a{
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	background: #07cbc9;
+	position: fixed;
+	top:0;
+	z-index: 99;
+}
+.header .logo{
+	float: left;
+	padding-left: 80px;
+	padding-top: 12px;
+}
+.header .nav{
+	float: right;
+}
+.header .nav ul{
+	padding-right: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+.header .nav ul li{
+	float: left;
+	width: 80px;
+}
+.header .nav ul li a{
+	color:#fff;
+}
+.header .nav ul li:hover{
+	background: rgba(0,0,0,.5);
+}
+
+.banner{
+	width: 100%;
+	height: 700px;
+}
+.banner img{
+	width: 100%;
+	height: 700px;
+}
+.banner .banner-cover{
+	width: 100%;
+	height: 700px;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+}
+.banner .login{
+	width: 519px;
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left:-259.5px;
+}
+.banner .login input{
+	display: block;
+	width: 505px;
+	height: 39px;
+	border: 2px solid rgba(255,255,255,0.5);
+	padding-left: 10px;
+	margin-bottom: 20px;
+	background:rgba(0,0,0,0);
+}
+.banner .login input:hover{
+	border: 2px solid #07cbc9;
+}
+.banner .login textarea{
+	display: block;
+	width: 505px;
+	height: 115px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	border: 2px solid rgba(255,255,255,0.5);
+	background:rgba(0,0,0,0);
+}
+.banner .login textarea:hover{
+	border: 2px solid #07cbc9;
+}
+.banner .login button{
+	width: 123px;
+	height: 39px;
+	text-align: center;
+	border: 2px solid rgba(255,255,255,0.5);
+	background:rgba(0,0,0,0);
+	color: rgba(255,255,255,0.5);
+	margin-left: 186px;
+}
+.banner .login button:hover{
+	border: 2px solid #07cbc9;
+}
+.about .a-top{
+	width: 1080px;
+	margin: 50px auto 100px;
+}
+.about .a-top .title{
+	text-align: center;
+
+}
+.about .a-top .title h1{
+	font-size: 40px;
+}
+.line{
+	width: 40px;
+	height: 2px;
+	background-color: #07cbc9;
+	margin: 10px auto;
+}
+.about .a-top .title p{
+	color: #333;
+	line-height: 1.5em;
+}
+
+.detail{
+	margin-top: 50px;
+	position: relative;
+}
+
+.d-left,.d-middle{
+	float: left;
+}
+.d-right{
+	float: right;
+}
+.d-left{
+	position: relative;
+	z-index:2;
+}
+.d-left h3{
+	margin-left: 20px;
+	font-size:28px; 
+}
+.d-left p{
+	background: rgba(255,255,255,.5);
+	width: 368px;
+	height: 244px;
+	border: 2px solid #efefef; 
+	padding: 20px;
+	line-height: 2em;
+	position: relative;
+}
+.d-left button{
+	display: block;
+	position: absolute;
+	bottom: 45px;
+	left: 20px;
+	width: 102px;
+	height: 45px;
+	background: #000;
+	margin-top: 20px;
+	color: #fff;
+}
+.d-left button:hover{
+	color: #000;
+	background: rgba(0,0,0,0);
+	border: 1px solid #000;
+}
+.d-middle{
+	width: 568px;
+	height: 380px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -284px;
+}
+.d-middle img{
+	width: 568px;
+	height: 380px;
+}
+.clear{
+	clear: both;
+}
+.d-right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+.r-content{
+	width: 236px;
+	height: 142px;
+	border: 1px solid #07cbc9;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.d-right .line{
+	width: 40px;
+	height: 2px;
+	background-color: #07cbc9;
+}
+.r-content h1{
+	padding: 20px 0 10px;
+	font-size: 30px;
+}
+.r-content p{
+	padding-top: 10px;
+	font-size: 16px;
+}
+
+.a-bottom{
+	width: 100%;
+	height: 800px;
+}
+.intro,.introbg{
+	width: 25%;
+	height: 400px;
+	float: left;
+}
+.intro img{
+	width: 100%;
+	height: 400px;
+}
+.introbg{
+	background: #07cbc9;
+	color: #fff;
+}
+.introbg-con{
+	padding: 40px;
+	position: relative;
+}
+.introbg-con h1{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.introbg-con .sub{
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+.introbg-con .con{
+	font-size: 14px;
+	margin-bottom: 30px;
+	line-height: 1.5em;
+}
+.introbg-con button{
+	position: absolute;
+	left:50%;
+	top:310px;
+	width: 102px;
+	height: 45px;
+	background: #000;
+	color: #fff;
+	margin-left:-51px; 
+}
+.introbg-con button:hover{
+	color: #000;
+	background: rgba(0,0,0,0);
+	border: 1px solid #000;
+}
+.introbg-con .arrow{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 20px 30px;
+	border-color: transparent #07cbc9 transparent transparent;
+	position: absolute;
+	left: -50px;
+	top:171px;
+}
+.introbg-con .arrow1{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 30px 20px 20px;
+	border-color: transparent transparent transparent #07cbc9;
+	position: absolute;
+	right: -50px;
+	top:171px;
+}
+.gallery{
+	width: 1140px;
+	margin: 50px auto 50px;
+}
+.gallery .title{
+	text-align: center;
+
+}
+.gallery .title h1{
+	font-size: 40px;
+}
+.line{
+	width: 40px;
+	height: 2px;
+	background-color: #07cbc9;
+	margin: 10px auto;
+}
+.gallery .title p{
+	color: #333;
+	line-height: 1.5em;
+}
+
+.gallery-img{
+	width: 1140px;
+	margin: 40px auto;
+}
+.gallery-img dl{
+	width: 360px;
+	height: 304px;
+	margin: 10px;
+	float: left;
+}
+.gallery-img dl dt{
+	width: 360px;
+	height: 240px;
+}
+.gallery-img dl dt img{
+	width: 360px;
+	height: 240px;
+}
+.gallery-img dl dd{
+	width: 360px;
+	height: 64px;
+	background: #000;
+	line-height: 64px;
+	color: #fff;
+}
+.gallery-img dl dd p{
+	padding-left: 10px;
+}
+
+.footer{
+	width: 100%;
+	height: 80px;
+	background: #07cbc9;
+	text-align: center;
+	line-height: 80px;
+	color: #fff;
+	font-size: 16px;
+}
+
+
