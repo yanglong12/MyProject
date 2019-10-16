@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		/*天空样式*/
+		.sky {
+			width: 100%;
+			height: 60%;
+			background: linear-gradient(0deg,#fff 0%,rgb(196,228,253) 100%);
+			position: relative;
+		}
+
+		/*云朵样式*/
+		.sky div {
+			width: 120px;
+			height: 120px;
+			background: #fff;
+			border-radius: 50%;
+			transform: translate(40px,48px);
+			position: absolute;
+			left: 110%;
+		}
+		.sky div:before {
+			content: "";
+		    width: 200px;
+		    height: 60px;
+		    background: #fff;
+		    border-radius: 30px;
+		    display: block;
+		    transform: translate(-68px,56px);
+		}
+		.sky div:after {
+			content: "";
+		    width: 102px;
+		    height: 80px;
+		    background: #fff;
+		    border-radius: 40px;
+		    display: block;
+		    transform: rotate(58deg) translate(-47px,24px);
+		}
+
+		/*每个云朵的位置和动画*/
+		.sky div:nth-child(1){
+			top: 10px;
+			animation: one 8s linear infinite;
+		}
+		.sky div:nth-child(2){
+			top: 40px;
+			transform: scale(.7);
+			opacity: 0.8;
+			animation: one 9s linear 1s infinite;
+		}
+		.sky div:nth-child(3) {
+			top: 84px;
+			transform: scale(.7);
+			opacity: 0.7;
+			animation: one 11s linear 1s infinite;
+		}
+		.sky div:nth-child(4) {
+			top: 143px;
+			transform: scale(.7);
+			opacity: 0.8;
+			animation: one 12s linear 3s infinite;
+		}
+		.sky div:nth-child(5) {
+			top: 159px;
+			transform: scale(.6);
+			opacity: 0.6;
+			animation: one 15s linear 4s infinite;
+		}
+
+		/*草地和兔子样式*/
+		.grass {
+			width: 100%;
+			height: 40%;
+			background: linear-gradient(0deg, rgb(148,190,89) 0%, #fff 100%);
+			position: relative;
+		}
+		.grass img {
+			width: 300px;
+			position: absolute;
+			right: 200px;
+			bottom: 50px;
+		}
+
+		/*云朵的关键帧*/
+		@keyframes one {
+			0%{left: 110%;}
+			100%{left: -100px;}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 天空部分 -->
+	<div class="sky">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+	<!-- 草地和兔子部分 -->
+	<div class="grass">
+		<img src="rabbit.png" alt="">
+	</div>
+
+</body>
+</html>
